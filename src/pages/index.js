@@ -6,13 +6,19 @@ export default function Home() {
   const dummyText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit.`;
   const test = (
     <>
-      <button className="inline-block px-4 py-3 text-sm font-semibold text-center text-white uppercase transition duration-200 ease-in-out bg-indigo-500 rounded-md cursor-pointer hover:bg-indigo-600">
-        Yes
-      </button>{" "}
+      <input
+        type="range"
+        max="100"
+        step="10"
+        className="range range-primary"
+      ></input>
     </>
   );
   return (
-    <div className="flex align-middle justify-center min-h-screen bg-gray-300">
+    <div
+      data-theme="osler"
+      className="flex align-middle justify-center min-h-screen bg-gray-300"
+    >
       <Head>
         <title>Contract Negotiation Cheat Sheet</title>
         <link rel="icon" href="/favicon.ico" />
@@ -26,7 +32,7 @@ export default function Home() {
             height={50}
           />
         </div>
-        <h1 className="text-5xl font-sans text-center">
+        <h1 className="text-5xl text-gray-700 font-sans text-center">
           In a Box:
           <div className="text-red-700 font-medium">
             AI Contract Negotiation Cheat Sheet
