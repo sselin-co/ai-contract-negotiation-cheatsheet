@@ -4,6 +4,13 @@ import Card from "../components/Card";
 
 export default function Home() {
   const dummyText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit.`;
+  const test = (
+    <>
+      <button className="inline-block px-4 py-3 text-sm font-semibold text-center text-white uppercase transition duration-200 ease-in-out bg-indigo-500 rounded-md cursor-pointer hover:bg-indigo-600">
+        Yes
+      </button>{" "}
+    </>
+  );
   return (
     <div className="flex align-middle justify-center min-h-screen bg-gray-300">
       <Head>
@@ -21,7 +28,7 @@ export default function Home() {
         </div>
         <h1 className="text-5xl font-sans text-center">
           In a Box:
-          <div className="text-red-700">
+          <div className="text-red-700 font-medium">
             AI Contract Negotiation Cheat Sheet
           </div>
         </h1>
@@ -29,7 +36,7 @@ export default function Home() {
           <Card title="Content 1" text={dummyText} />
           <Card title="Content 2" text={dummyText} />
           <Card title="Content 3" text={dummyText} />
-          <Card title="Content 4" text={dummyText} />
+          <Card title="Content 4" text={dummyText} content={test} />
         </div>
         {/* <div className=" bg-gray-500 text-white shadow-lg rounded-md">
           <div className="p-5">
