@@ -1,14 +1,16 @@
 import Head from "next/head";
 import Image from "next/image";
+import Card from "../components/Card";
 
 export default function Home() {
+  const dummyText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit.`;
   return (
-    <div className="min-h-screen bg-gray-200">
+    <div className="flex align-middle justify-center min-h-screen bg-gray-300">
       <Head>
         <title>Contract Negotiation Cheat Sheet</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <body>
+      <body className="">
         <div className="pt-5 pl-5">
           <Image
             src="/logo.png"
@@ -23,6 +25,22 @@ export default function Home() {
             AI Contract Negotiation Cheat Sheet
           </div>
         </h1>
+        <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
+          <Card title="Content 1" text={dummyText} />
+          <Card title="Content 2" text={dummyText} />
+          <Card title="Content 3" text={dummyText} />
+          <Card title="Content 4" text={dummyText} />
+        </div>
+        {/* <div className=" bg-gray-500 text-white shadow-lg rounded-md">
+          <div className="p-5">
+            <h2 className="text-2xl font-sans text-center">Static content</h2>
+          </div>
+        </div>
+        <div className=" bg-gray-500 text-white shadow-lg rounded-md">
+          <div className="p-5">
+            <h2 className="text-2xl font-sans text-center">Static content</h2>
+          </div>
+        </div> */}
       </body>
     </div>
     // <div className="flex flex-col items-center justify-center min-h-0 py-2">
