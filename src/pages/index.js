@@ -179,31 +179,48 @@ export default function Home() {
   };
   return (
     <div
-      data-theme="osler"
-      className="flex align-middle justify-center min-h-screen bg-base-300"
+      // data-theme="osler"
+      className="min-h-screen"
     >
       <Head>
         <title>Contract Negotiation Cheat Sheet</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>
-        <div className="pt-5 pb-5 text-center md:text-left">
-          <a href="https://osler.com" target="_blank">
-            <Image
-              src="/logo.png"
-              alt="Contract Negotiation Cheat Sheet"
-              width={180}
-              height={50}
-            />
-          </a>
+      {/* className="md:container md:mx-auto" */}
+      <div className="md:container md:mx-auto">
+        <div className="navbar shadow-lg bg-neutral text-neutral-content rounded-box sticky top-0 z-10">
+          <div className="navbar-start">
+            <div className="text-center md:text-left">
+              <a
+                href="https://osler.com"
+                target="_blank"
+                className="btn btn-ghost"
+              >
+                <h2 className="mb-5 text-4xl font-bold">Osler</h2>
+              </a>
+            </div>
+          </div>
         </div>
-        <h1 className="text-5xl text-neutral font-sans text-center">
+        <div className="hero min-h-screen">
+          <div className="text-center hero-content mb-20">
+            <div className="max-w-3xl">
+              <h1 className="mb-5 text-4xl sm:text-6xl font-bold text-neutral-content">
+                AI Contract Negotiation Cheat Sheet
+              </h1>
+              <p className="text-lg sm:text-xl font-bold mb-5">
+                Your guide to the contract negotiation process.
+              </p>
+              <button className="btn btn-primary">Get Started</button>
+            </div>
+          </div>
+        </div>
+        {/* <h1 className="text-5xl text-neutral font-sans text-center">
           In a Box:
           <h1 className="text-primary font-medium">
             AI Contract Negotiation Cheat Sheet
           </h1>
-        </h1>
-        <div className="flex">
+        </h1> */}
+        {/* <div className="flex">
           <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
             <Card
               title="General Contract Principles"
@@ -218,11 +235,11 @@ export default function Home() {
             <Card title="Negotiation Mistakes" text={dummyText} />
             <Card title="AI Concepts" text={dummyText} />
           </div>
-          <div class="divider divider-vertical m-8 "></div>
+          <div className="divider divider-vertical m-8 "></div>
           <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
             <InteractiveCard title={titles} text={content} />
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
