@@ -1,8 +1,8 @@
-const plugin = require('tailwindcss/plugin')
+const plugin = require("tailwindcss/plugin");
 module.exports = {
   mode: "jit",
   purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: "class", // or 'media' or 'class'
   variants: {
     extend: {},
   },
@@ -14,15 +14,15 @@ module.exports = {
           primary: "#94343F",
           "primary-focus": "#612229",
           "primary-content": "#ffffff",
-          secondary: "#f6d860",
-          "secondary-focus": "#f3cc30",
+          secondary: "#2094f3",
+          "secondary-focus": "#2094f3",
           "secondary-content": "#ffffff",
           accent: "#37cdbe",
           "accent-focus": "#2aa79b",
           "accent-content": "#ffffff",
-          neutral: "#3d4451",
+          neutral: "#ffffff",
           "neutral-focus": "#2a2e37",
-          "neutral-content": "#ffffff",
+          "neutral-content": "#2a2e37",
           "base-100": "#ffffff",
           "base-200": "#f9fafb",
           "base-300": "#d1d5db",

@@ -550,7 +550,7 @@ export default function Home() {
   return (
     <div
       // data-theme="osler"
-      className="min-h-screen"
+      className="min-h-screen dark"
     >
       <Head>
         <title>{t("page-title")}</title>
