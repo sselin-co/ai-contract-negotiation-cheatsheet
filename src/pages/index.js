@@ -13,7 +13,7 @@ export default function Home() {
   let [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
   const { t } = useTranslation("common");
-  const dummyText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit.`;
+  const tableDescription = `Change the tab to view a different table.`;
   const titles = ["Data", "Models", "Indemnity", "Liability"];
   const content = [
     "Content for Slider 1",
@@ -23,16 +23,16 @@ export default function Home() {
   ];
   const NegotiationTable = () => {
     return (
-      <table className="w-full table overflow-x-auto">
-        <thead>
+      <table className="w-full text-sm relative overflow-x-auto">
+        <thead className="sticky top-0 bg-neutral">
           <tr>
             <th scope="col">Tactics</th>
             <th scope="col">Explanation</th>
             <th scope="col">Example</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
+        <tbody className="text-2xs">
+          <tr className="bg-base-100 border-2 border-neutral">
             <td>THROWING JUNK</td>
             <td>
               Information that is delivered tactically to weaken the other
@@ -43,7 +43,7 @@ export default function Home() {
               the color either.”
             </td>
           </tr>
-          <tr>
+          <tr className="bg-base-100 border-2 border-neutral">
             <td>PERSUASION</td>
             <td>
               Cause the other party to do something through reasoning or
@@ -54,12 +54,12 @@ export default function Home() {
               standp­oint.”
             </td>
           </tr>
-          <tr>
+          <tr className="bg-base-100 border-2 border-neutral">
             <td>COMPETITION</td>
             <td>A tactically delivered threat of doing business elsewhere.</td>
             <td>“You’re quite a bit higher than the competition.”</td>
           </tr>
-          <tr>
+          <tr className="bg-base-100 border-2 border-neutral">
             <td>THE FLINCH</td>
             <td>
               A tactically delivered negative reaction to the other party’s
@@ -68,7 +68,7 @@ export default function Home() {
             </td>
             <td>“Whoa, I must have misheard you. $70 per unit?!”</td>
           </tr>
-          <tr>
+          <tr className="bg-base-100 border-2 border-neutral">
             <td>THE SQUEEZE</td>
             <td>
               A tactically planned statement that directly targets your
@@ -76,7 +76,7 @@ export default function Home() {
             </td>
             <td>“I like you, but I need you to do better than that.”</td>
           </tr>
-          <tr>
+          <tr className="bg-base-100 border-2 border-neutral">
             <td>DEADLINE</td>
             <td>
               A time pressure that is tactically aimed to affect the choices the
@@ -85,7 +85,7 @@ export default function Home() {
             </td>
             <td>“I need your best offer by 5pm.”</td>
           </tr>
-          <tr>
+          <tr className="bg-base-100 border-2 border-neutral">
             <td>PERSUASION</td>
             <td>
               Cause the other party to do something through reasoning or
@@ -96,7 +96,7 @@ export default function Home() {
               standp­oint.”
             </td>
           </tr>
-          <tr>
+          <tr className="bg-base-100 border-2 border-neutral">
             <td>FIRM POSITION</td>
             <td>
               Strate­gically deadlo­cking in order to test the other party’s
@@ -107,7 +107,7 @@ export default function Home() {
               your time.”
             </td>
           </tr>
-          <tr>
+          <tr className="bg-base-100 border-2 border-neutral">
             <td>LIMITED or NO AUTHORITY</td>
             <td>
               Strate­gically displaying a lack of authority in a given
@@ -118,7 +118,7 @@ export default function Home() {
               this SKU.”
             </td>
           </tr>
-          <tr>
+          <tr className="bg-base-100 border-2 border-neutral">
             <td>SILENCE</td>
             <td>
               Strate­gically using silence as a means to increase as well as
@@ -126,7 +126,7 @@ export default function Home() {
             </td>
             <td>“[Cric­kets]”</td>
           </tr>
-          <tr>
+          <tr className="bg-base-100 border-2 border-neutral">
             <td>THE NIBBLE</td>
             <td>
               A small, seemingly insign­ificant conces­sion. Usually made at the
@@ -143,34 +143,30 @@ export default function Home() {
   };
   const PrinciplesTable = () => {
     return (
-      <table className="w-full table overflow-x-auto">
-        <thead>
+      <table className="w-full text-sm relative bg-neutral overflow-x-auto">
+        <thead className="sticky top-0 bg-neutral">
           <tr>
             <th>Mistake</th>
             <th>Explanation</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td>
-              Not building <br /> relati­onships
-            </td>
+        <tbody className="text-2xs">
+          <tr className="bg-base-100 border-2 border-neutral">
+            <td>NOT BUILDING RELATIONSHIPS</td>
             <td className="max-w-2xl">
               <div>
                 There may be times when you have to enter into negoti­ations
-                without any unders­tanding <br /> of the other side’s positions.
-                But wherever possible try to establish a relati­onship with{" "}
-                <br /> the other party in advance; doing so will greatly
-                increase your negoti­ating power.
-                <br /> Even seemingly unimpo­rtant “small talk” can help to
-                establish trust while giving you <br /> some insight into how to
-                deal with the other person. Not knowing anything about your{" "}
-                <br />
+                without any unders­tanding of the other side’s positions. But
+                wherever possible try to establish a relati­onship with the
+                other party in advance; doing so will greatly increase your
+                negoti­ating power. Even seemingly unimpo­rtant “small talk” can
+                help to establish trust while giving you some insight into how
+                to deal with the other person. Not knowing anything about your
                 opponent in a negoti­ating situation is a major handicap.
               </div>
             </td>
           </tr>
-          <tr>
+          <tr className="bg-base-100 border-2 border-neutral">
             <td>Hart Hagerty</td>
             <td>Desktop Support Technician</td>
           </tr>
@@ -280,7 +276,7 @@ export default function Home() {
               Privacy Commissioners
             </Tab>
           </Tab.List>
-          <Tab.Panels>
+          <Tab.Panels className="py-2">
             <Tab.Panel>
               <div className="grid grid-flow-col gap-3">
                 <a
@@ -604,9 +600,10 @@ export default function Home() {
           </div>
           <div class="grid grid-cols-3 grid-rows-6 space-y-5">
             <div className="row-span-3">
+              <br />
               <Card
                 title="General Contract Principles"
-                text={dummyText}
+                text={tableDescription}
                 content={TableTabs()}
               />
             </div>
