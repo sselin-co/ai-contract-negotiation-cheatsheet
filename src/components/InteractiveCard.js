@@ -6,6 +6,9 @@ const InteractiveCard = (props) => {
   const [value, setValue] = useState(
     "Start tuning the sliders to your situation to get personalized contract provision statements for your situation."
   );
+  const [title, setTitle] = useState(
+    "Start tuning the sliders to your situation to get personalized contract provision statements for your situation."
+  );
   // Set values for the sliders
   const [dataVal, setdataVal] = useState(50);
   const [modelVal, setmodelVal] = useState(50);

@@ -349,7 +349,7 @@ export default function Home() {
                 selected ? "tab tab-lifted tab-active" : "tab tab-lifted"
               }
             >
-              Contract Principles
+              Negotiation Mistakes
             </Tab>
           </Tab.List>
           <Tab.Panels class="h-96 no-scrollbar no-scrollbar::-webkit-scrollbar overflow-y-auto">
@@ -388,12 +388,12 @@ export default function Home() {
                 selected ? "tab tab-lifted tab-active" : "tab tab-lifted"
               }
             >
-              Privacy Commissioners
+              Privacy
             </Tab>
           </Tab.List>
           <Tab.Panels className="py-2">
             <Tab.Panel>
-              <div className="grid grid-flow-col gap-3">
+              <div className="grid grid-cols-3 gap-3">
                 <a
                   target="_blank"
                   className="btn btn-primary text-2xs"
@@ -408,6 +408,55 @@ export default function Home() {
                 >
                   OECD Principles on AI
                 </a>
+                <a
+                  target="_blank"
+                  className="btn btn-accent text-2xs"
+                  href="https://www.acm.org/binaries/content/assets/public-policy/2017_joint_statement_algorithms.pdf"
+                >
+                  ACM Transparency
+                </a>
+                <a
+                  target="_blank"
+                  className="btn btn-info text-2xs"
+                  href="https://standards.ieee.org/content/dam/ieee-standards/standards/web/documents/other/ead1e-overview.pdf"
+                >
+                  IEEE – Ethically Aligned Design
+                </a>
+                <a
+                  target="_blank"
+                  className="btn btn-primary text-2xs"
+                  href="https://www.torontodeclaration.org/"
+                >
+                  Toronto Declaration
+                </a>
+                <a
+                  target="_blank"
+                  className="btn btn-secondary text-2xs"
+                  href="https://www.microsoft.com/en-us/ai/responsible-ai"
+                >
+                  Microsoft AI Principles
+                </a>
+                <a
+                  target="_blank"
+                  className="btn btn-accent text-2xs"
+                  href="https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/responsible-use-ai.html"
+                >
+                  Canada Responsible AI
+                </a>
+                <a
+                  target="_blank"
+                  className="btn btn-info text-2xs"
+                  href="https://www.ontario.ca/page/ontarios-trustworthy-artificial-intelligence-ai-framework-consultations"
+                >
+                  Ontario Trustworthy AI Framework
+                </a>
+                <a
+                  target="_blank"
+                  className="btn btn-primary text-2xs"
+                  href="https://www.un.org/en/chronicle/article/towards-ethics-artificial-intelligence"
+                >
+                  United Nations
+                </a>
               </div>
             </Tab.Panel>
             <Tab.Panel>
@@ -421,10 +470,24 @@ export default function Home() {
                 </a>
                 <a
                   target="_blank"
-                  className="btn btn-secondary text-2xs"
+                  className="btn btn-secondary text-xs"
                   href="https://ciostrategycouncil.com/standards/"
                 >
                   CIO Council Standards
+                </a>
+                <a
+                  target="_blank"
+                  className="btn btn-accent text-xs"
+                  href="https://standards.ieee.org/industry-connections/ec/autonomous-systems.html"
+                >
+                  IEEE Standards
+                </a>
+                <a
+                  target="_blank"
+                  className="btn btn-info text-xs"
+                  href="https://www.nist.gov/artificial-intelligence"
+                >
+                  NIST Standards
                 </a>
               </div>
             </Tab.Panel>
