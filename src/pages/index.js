@@ -167,16 +167,132 @@ export default function Home() {
             </td>
           </tr>
           <tr className="bg-base-100 border-2 border-neutral">
-            <td>Hart Hagerty</td>
-            <td>Desktop Support Technician</td>
+            <td>TALKING TOO MUCH</td>
+            <td>
+              In negoti­ating, silence carries a great deal of power. Most
+              people are uncomf­ortable with silence and negoti­ating pros are
+              well aware of that. Train yourself to get comfor­table with the
+              awkwar­dness of silence and use it to your negoti­ating advantage.
+              After a period of silence, the first person to speak will usually
+              be at a disadv­antage. As one pro puts it, “He who talks the least
+              learns the most.”
+            </td>
           </tr>
-          <tr>
-            <td>Brice Swyre</td>
-            <td>Tax Accountant</td>
+          <tr className="bg-base-100 border-2 border-neutral">
+            <td>NOT LISTENING</td>
+            <td>
+              It is often easier for us to think about what we want to say next
+              rather than listen to what is being said. If that sounds familiar,
+              you have a valuable opport­unity to bolster your negoti­ating
+              success. “Listening is a skill that you must work on” says Michele
+              Tillis Lederman, author and adjunct professor at NYU’s Stern
+              School of Business. “Listening is not a passive activity. It takes
+              energy and concen­tration to focus on what people are saying and
+              what they mean by it.”
+            </td>
           </tr>
-          <tr>
-            <td>Marjy Ferencz</td>
-            <td>Office Assistant I</td>
+          <tr className="bg-base-100 border-2 border-neutral">
+            <td>CONLFATING ARGUING WITH NEGOTIATING</td>
+            <td>
+              In an argument, each person makes a strong and sometimes
+              irreve­rsible point for or against something. Under those
+              condit­ions, seldom if ever is any productive conclusion reached.
+              In contrast, the purpose of a negoti­ation session is for both
+              sides to reach an agreement. Almost without exception compro­mises
+              on the part of both sides are necessary. Negoti­ation skills on
+              your part can help to avoid that deal-k­illing conclu­sion.
+            </td>
+          </tr>
+          <tr className="bg-base-100 border-2 border-neutral">
+            <td>WAITING FOR THE OTHER PARTY TO MAKE THE FIRST OFFER</td>
+            <td>
+              Contrary to conven­tional wisdom, there is no research supporting
+              the claim that waiting for the other party to make the first move
+              is advant­ageous; in fact, making the first offer can serve as an
+              anchor influe­ncing the other party’s counte­roffer. If you do
+              decide to make the first move, avoid making an unreal­istic offer
+              — such a move can backfire by discou­raging the other party from
+              continuing in the negoti­ation. But remember that first offers are
+              hardly ever accepted so make sure that your offer allows room for
+              maneuv­ering
+            </td>
+          </tr>
+          <tr className="bg-base-100 border-2 border-neutral">
+            <td>NOT KNOWING YOUR BATNA</td>
+            <td>
+              Skillful negoti­ation calls for careful advance consid­eration of
+              possible outcomes — that’s why it is best to know in advance what
+              the least is that you will agree to. BATNA stands for “Best
+              Altern­ative to a Negotiated Agreem­ent.” The term originated in
+              the book “Getting to Yes: Negoti­ating Agreement Without Giving
+              In” by Roger Fisher and William Ury. Even though your aim in
+              negoti­ation is to come away with what you want, it’s important to
+              decide in advance what your next-best altern­ative is (your
+              BATNA).
+            </td>
+          </tr>
+          <tr className="bg-base-100 border-2 border-neutral">
+            <td>FAILING TO CONTROL YOUR EMOTIONS</td>
+            <td>
+              Keep your emotions in check and you are less likely to enter into
+              a bad deal. By mainta­ining the option to call it a day you’ll be
+              in a stronger bargaining position if the other party decides to
+              try again. In that case, the pressure will be on them to improve
+              the offer.
+            </td>
+          </tr>
+          <tr className="bg-base-100 border-2 border-neutral">
+            <td>FORGETTING THAT EVERYTHING IS NEGOTIABLE</td>
+            <td>
+              Don’t allow yourself to be sidetr­acked by statements declaring
+              that something is non-ne­got­iable. Once you decide that the terms
+              for anything are subject to change, you give yourself a strong
+              negoti­ating advantage by offering a sensible, viable and mutually
+              beneficial altern­ative.
+            </td>
+          </tr>
+          <tr className="bg-base-100 border-2 border-neutral">
+            <td>FAILING TO PREPARE</td>
+            <td>
+              Even though you have a clear idea of what you want to accomplish
+              in a negoti­ation, you still have to think about and prepare your
+              arguments carefully. You also want to learn as much as possible
+              about the other party — whether it is an employee, your landlord,
+              a supplier or a potential big client. No matter how major or
+              minor, the more knowledge you can demons­trate about the subject
+              of the negoti­ation, the more respect you will get from the other
+              party and the more confident you will feel. Also, good
+              prepar­ation makes it less likely that you will forget something,
+              as it is extremely difficult to introduce new demands after
+              negoti­ations have begun.
+            </td>
+          </tr>
+          <tr className="bg-base-100 border-2 border-neutral">
+            <td>FAILING TO ASK</td>
+            <td>
+              Key to successful negoti­ations is asking for what you want. The
+              fear of rejection or of appearing greedy can put a major dent in
+              your negoti­ation success. Rejections are going to happen;
+              however, it is important to remember that they are not personal.
+              When you get a “no” remember to keep asking. Always have several
+              altern­atives to offer, and remember why you have your BATNA.
+            </td>
+          </tr>
+          <tr className="bg-base-100 border-2 border-neutral">
+            <td>ISSUING AN ULTIMATUM</td>
+            <td>
+              The one deadly mistake inexpe­rienced negoti­ators make, is
+              beginning the negoti­ations with “this is our best and last
+              offer.” Once that’s said, there’s no room for negoti­ation. The
+              other party has been put in a defensive position. While it may
+              become necessary to become aggres­sive, it is always best to keep
+              in mind that the ultimate goal of a negoti­ating session is to
+              reach a mutually acceptable conclu­sion. Should a deadlock be
+              reached, one solution could be setting a deadline for the
+              conclusion of the negoti­ations. This gives both parties time to
+              reexamine their positions and reopen talks with a renewed effort
+              to reach an agreement.
+            </td>
           </tr>
         </tbody>
       </table>
@@ -237,7 +353,7 @@ export default function Home() {
               Contract Principles
             </Tab>
           </Tab.List>
-          <Tab.Panels class=" h-96 no-scrollbar no-scrollbar::-webkit-scrollbar overflow-y-auto">
+          <Tab.Panels class="h-96 no-scrollbar no-scrollbar::-webkit-scrollbar overflow-y-auto">
             <Tab.Panel>
               <NegotiationTable />
             </Tab.Panel>
@@ -378,7 +494,7 @@ export default function Home() {
   const Trailer = () => {
     return (
       <>
-        <div className="card shadow-sm bg-neutral text-neutral-content max-w-full">
+        <div className="card shadow-sm bg-neutral text-neutral-content max-w-80">
           <figure>
             <iframe
               width="460"
@@ -598,8 +714,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div class="grid grid-cols-3 grid-rows-6 space-y-5">
-            <div className="row-span-3">
+          <div class="grid grid-cols-3 grid-rows-6 space-y-10 -mb-24">
+            <div className="row-span-3 py-4">
               <br />
               <Card
                 title="General Contract Principles"
