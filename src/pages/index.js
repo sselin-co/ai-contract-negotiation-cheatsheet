@@ -13,7 +13,6 @@ export default function Home() {
   let [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
   const { t } = useTranslation("common");
-  const tableDescription = `Change the tab to view a different table.`;
   const titles = ["Data", "Models", "Indemnity", "Liability"];
   const content = [
     "Content for Slider 1",
@@ -396,12 +395,14 @@ export default function Home() {
             <Tab.Panel>
               <div className="grid grid-flow-col gap-3">
                 <a
+                  target="_blank"
                   className="btn btn-primary text-2xs"
                   href="https://recherche.umontreal.ca/english/strategic-initiatives/montreal-declaration-for-a-responsible-ai/"
                 >
                   Montreal Declaration
                 </a>
                 <a
+                  target="_blank"
                   className="btn btn-secondary text-2xs"
                   href="https://www.oecd.org/going-digital/ai/principles/"
                 >
@@ -412,12 +413,14 @@ export default function Home() {
             <Tab.Panel>
               <div className="grid grid-flow-row grid-cols-2 grid-rows-1 gap-4">
                 <a
+                  target="_blank"
                   className="btn btn-primary"
                   href="https://www.iso.org/committee/6794475.html"
                 >
                   ISO Standards
                 </a>
                 <a
+                  target="_blank"
                   className="btn btn-secondary text-2xs"
                   href="https://ciostrategycouncil.com/standards/"
                 >
@@ -428,60 +431,101 @@ export default function Home() {
             <Tab.Panel>
               <div className="grid grid-flow-row grid-cols-6 grid-rows-3 gap-4">
                 <a
+                  target="_blank"
                   className="btn btn-primary"
                   href="https://www.priv.gc.ca/en/F"
                 >
                   CA
                 </a>
-                <a className="btn btn-secondary" href="https://www.ipc.on.ca/">
+                <a
+                  className="btn btn-secondary"
+                  target="_blank"
+                  href="https://www.ipc.on.ca/"
+                >
                   ON
                 </a>
-                <a className="btn btn-accent" href="https://www.oipc.ab.ca/">
+                <a
+                  className="btn btn-accent"
+                  target="_blank"
+                  href="https://www.oipc.ab.ca/"
+                >
                   AB
                 </a>
-                <a className="btn btn-info" href="https://www.oipc.bc.ca/">
+                <a
+                  className="btn btn-info"
+                  target="_blank"
+                  href="https://www.oipc.bc.ca/"
+                >
                   BC
                 </a>
                 <a
+                  target="_blank"
                   className="btn btn-success"
                   href="https://www.cai.gouv.qc.ca/english/"
                 >
                   QC
                 </a>
                 <a
+                  target="_blank"
                   className="btn btn-secondary"
                   href="https://www.ombudsman.mb.ca/"
                 >
                   MB
                 </a>
-                <a className="btn btn-accent" href="https://oipc.sk.ca/">
+                <a
+                  target="_blank"
+                  className="btn btn-accent"
+                  href="https://oipc.sk.ca/"
+                >
                   SK
                 </a>
-                <a className="btn btn-info" href="https://ombudnb.ca/site/">
+                <a
+                  target="_blank"
+                  className="btn btn-info"
+                  href="https://ombudnb.ca/site/"
+                >
                   NB
                 </a>
-                <a className="btn btn-primary" href="https://www.oipc.nl.ca/">
+                <a
+                  target="_blank"
+                  className="btn btn-primary"
+                  href="https://www.oipc.nl.ca/"
+                >
                   NL
                 </a>
                 <a
+                  target="_blank"
                   className="btn btn-secondary"
                   href="https://www.assembly.pe.ca/offices/information-and-privacy-commissioner"
                 >
                   PEI
                 </a>
                 <a
+                  target="_blank"
                   className="btn btn-accent"
                   href="https://oipc.novascotia.ca/"
                 >
                   NS
                 </a>
-                <a className="btn btn-info" href="http://www.ombudsman.yk.ca/">
+                <a
+                  target="_blank"
+                  className="btn btn-info"
+                  href="http://www.ombudsman.yk.ca/"
+                >
                   YT
                 </a>
-                <a className="btn btn-success" href="https://atipp-nt.ca/">
+                <a
+                  target="_blank"
+                  className="btn btn-success"
+                  href="https://atipp-nt.ca/"
+                >
                   NWT
                 </a>
-                <a className="btn btn-info" href="https://atipp-nu.ca/">
+                <a
+                  target="_blank"
+                  className="btn btn-info"
+                  href="https://atipp-nu.ca/"
+                >
                   NU
                 </a>
               </div>
@@ -717,11 +761,7 @@ export default function Home() {
           <div class="grid grid-cols-3 grid-rows-6 space-y-10 -mb-24">
             <div className="row-span-3 py-4">
               <br />
-              <Card
-                title="General Contract Principles"
-                text={tableDescription}
-                content={TableTabs()}
-              />
+              <Card title="General Contract Principles" content={TableTabs()} />
             </div>
             <div className="row-span-3">
               <Trailer />
