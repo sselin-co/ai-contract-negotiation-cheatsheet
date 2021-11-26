@@ -10,8 +10,6 @@ module.exports = {
   daisyui: {
     themes: [
       "dark", // and some pre-defined theme
-      "forest",
-      "synthwave",
     ],
   },
 };

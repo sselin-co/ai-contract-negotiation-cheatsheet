@@ -619,7 +619,8 @@ export default function Home() {
             </p>
             <div className="card-actions">
               <a
-                href="https://osler-university.teachable.com/p/ai-contracting-for-startup-founders"
+                target="_blank"
+                href="https://osler.teachable.com/p/ai-contracting-for-startup-founders"
                 className="btn btn-secondary"
               >
                 More info

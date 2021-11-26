@@ -8,7 +8,10 @@ const Card = (props) => {
           <div className="grid grid-cols-3">
             <div>{props.content}</div>
             <div className="col-span-2 px-5 h-80 no-scrollbar no-scrollbar::-webkit-scrollbar overflow-y-auto">
-              <div className="italic">{props.output}</div>
+              <div className="font-bold underline mb-5">
+                {props.outputTitle}
+              </div>
+              <div className="">{props.output}</div>
             </div>
           </div>
         </div>

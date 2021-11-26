@@ -3,45 +3,58 @@ import { useState } from "react";
 
 const InteractiveCard = (props) => {
   // Set default state of the output card
-  const [value, setValue] = useState(
-    "Start tuning the sliders to your situation to get personalized contract provision statements for your situation."
-  );
+  const [value, setValue] = useState("");
   const [title, setTitle] = useState(
     "Start tuning the sliders to your situation to get personalized contract provision statements for your situation."
   );
   // Set values for the sliders
-  const [dataVal, setdataVal] = useState(50);
-  const [modelVal, setmodelVal] = useState(50);
+  const [dataVal, setDataVal] = useState(50);
+  const [modelVal, setModelVal] = useState(50);
   const [indemnityVal, setIndemnityVal] = useState(50);
-  const [liabilityVal, setliabilityVal] = useState(50);
+  const dataString =
+    "You grant to us an irrevocable, worldwide, non-exclusive, royalty-free license to access, collect, store and use any data, information, records or files that you load, transmit to or enter into, or that we collect from, the Alpha Program (collectively, the “Model Training Set”) to the extent necessary for IAI to provide  the Alpha Program to you, including to create the Performance Metrics.";
+  const dataTitle = "Data - ";
+  const modelString =
+    "All right, title and interest, including intellectual property rights, in the Alpha Program Portal, Transmitter, all related materials provided by us hereunder, and any updates, adaptation, translation, customization or derivative works thereof will remain the sole property of IAI. The Alpha Program Portal, Transmitter, and all materials provided by us hereunder are made available or licensed and not “sold” to you.  All rights not expressly granted to you in these Terms of Use are reserved by IAI.  For greater clarity, any trademarks, graphics or logos appearing in the Alpha Program are the exclusive property of IAI (or our third-party suppliers) and may not be used in any manner without our express written consent.";
+  const modelTitle = "Model - ";
+  const indemnityString = `You will defend, indemnify and hold harmless us, our affiliates and service providers, and each of their and our respective officers, directors, employees, and agents, and any licensees, successors and assigns from and against any claims, causes of action, demands, recoveries, losses, damages, fines, penalties or other costs or expenses of any kind or nature including reasonable legal and accounting fees, arising out of or in connection with: 
+  (a)                your use (or the use by any third party using your Credentials) of the Alpha Program;
+
+  (b)                your breach of any provision of these Terms of Use or any documents referenced herein; or
+  
+  (c)                 your violation of any law or the rights of a third party (including intellectual property rights).`;
+  const indemnityTitle = "Indemnity - ";
   // Set the output card's text based on the sliders' values
-  const mutateOutput = () => {
-    // if (dataVal >= 70 && modelVal >= 70 && indemnityVal >= 70) {
+  const mutateOutput = (val, title, text) => {
+    if (val > 70) {
+      setTitle(title + "High Risk");
+      setValue(text);
+    } else if (val < 70 && val > 30) {
+      setTitle(title + "Medium Risk");
+      setValue(text);
+    } else {
+      setTitle(title + "Low Risk");
+      setValue(text);
+    }
+    // if (dataVal > 60) {
+    //   setTitle("Data - High Risk:");
     //   setValue(
-    //     "Your contract has high liability, ownership of product, and indemnity. Dolor tempor laboris eiusmod labore pariatur."
+    //     "You grant to us an irrevocable, worldwide, non-exclusive, royalty-free license to access, collect, store and use any data, information, records or files that you load, transmit to or enter into, or that we collect from, the Alpha Program (collectively, the “Model Training Set”) to the extent necessary for IAI to provide  the Alpha Program to you, including to create the Performance Metrics."
     //   );
-    // } else if (dataVal <= 30) {
+    // } else if (dataVal < 60 && dataVal > 30) {
+    //   setTitle("Data - Medium Risk:");
     //   setValue(
-    //     "This is considered low liability. Cupidatat ipsum sint fugiat velit voluptate in irure sint."
+    //     "You grant to us an irrevocable, worldwide, non-exclusive, royalty-free license to access, collect, store and use any data, information, records or files that you load, transmit to or enter into, or that we collect from, the Alpha Program (collectively, the “Model Training Set”) to the extent necessary for IAI to provide  the Alpha Program to you, including to create the Performance Metrics."
     //   );
-    // } else if (dataVal >= 70) {
+    // } else if (dataVal < 30) {
+    //   setTitle("Data - Low Risk:");
     //   setValue(
-    //     "This is considered high liability. Cupidatat ipsum sint fugiat velit voluptate in irure sint."
+    //     "You grant to us an irrevocable, worldwide, non-exclusive, royalty-free license to access, collect, store and use any data, information, records or files that you load, transmit to or enter into, or that we collect from, the Alpha Program (collectively, the “Model Training Set”) to the extent necessary for IAI to provide  the Alpha Program to you, including to create the Performance Metrics."
     //   );
     // }
-    if (dataVal <= 70 && dataVal >= 30) {
-      setValue(
-        "Data - Medium Risk: Limitations of Liability. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT WILL LICENSEE BE LIABLE, WHETHER BASED ON WARRANTY, CONTRACT, TORT, NEGLIGENCE, STRICT LIABILITY OR ANY OTHER LEGAL THEORY, FOR ANY DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL, EXEMPLARY OR PUNITIVE DAMAGES; OR LOST PROFITS, PERSONAL INJURY, FINES, FEES, PENALTIES OR OTHER LIABILITIES, IN EACH CASE, WHETHER OR NOT LICENSEE WAS ADVISED OF THE POSSIBILITY OF SUCH DAMAGES, RESULTING FROM OR RELATED TO THIS AGREEMENT.  TO THE EXTENT THAT THE FOREGOING LIMITATION IS NOT PERMITTED BY APPLICABLE LAW, IN NO EVENT WILL LICENSEE’S TOTAL AGGREGATE LIABILITY IN CONNECTION WITH OR UNDER THIS AGREEMENT EXCEED $100USD. FOR GREATER CERTAINTY, THE EXISTENCE OF ONE OR MORE CLAIMS UNDER THIS AGREEMENT WILL NOT INCREASE THIS MAXIMUM LIABILITY AMOUNT.Limitations of Liability. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT WILL LICENSEE BE LIABLE, WHETHER BASED ON WARRANTY, CONTRACT, TORT, NEGLIGENCE, STRICT LIABILITY OR ANY OTHER LEGAL THEORY, FOR ANY DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL, EXEMPLARY OR PUNITIVE DAMAGES; OR LOST PROFITS, PERSONAL INJURY, FINES, FEES, PENALTIES OR OTHER LIABILITIES, IN EACH CASE, WHETHER OR NOT LICENSEE WAS ADVISED OF THE POSSIBILITY OF SUCH DAMAGES, RESULTING FROM OR RELATED TO THIS AGREEMENT.  TO THE EXTENT THAT THE FOREGOING LIMITATION IS NOT PERMITTED BY APPLICABLE LAW, IN NO EVENT WILL LICENSEE’S TOTAL AGGREGATE LIABILITY IN CONNECTION WITH OR UNDER THIS AGREEMENT EXCEED $100USD. FOR GREATER CERTAINTY, THE EXISTENCE OF ONE OR MORE CLAIMS UNDER THIS AGREEMENT WILL NOT INCREASE THIS MAXIMUM LIABILITY AMOUNT."
-      );
-      if (dataVal <= 30) {
-        setValue(
-          "Data - Low Risk: Limitations of Liability. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT WILL LICENSEE BE LIABLE, WHETHER BASED ON WARRANTY, CONTRACT, TORT, NEGLIGENCE, STRICT LIABILITY OR ANY OTHER LEGAL THEORY, FOR ANY DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL, EXEMPLARY OR PUNITIVE DAMAGES; OR LOST PROFITS, PERSONAL INJURY, FINES, FEES, PENALTIES OR OTHER LIABILITIES, IN EACH CASE, WHETHER OR NOT LICENSEE WAS ADVISED OF THE POSSIBILITY OF SUCH DAMAGES, RESULTING FROM OR RELATED TO THIS AGREEMENT.  TO THE EXTENT THAT THE FOREGOING LIMITATION IS NOT PERMITTED BY APPLICABLE LAW, IN NO EVENT WILL LICENSEE’S TOTAL AGGREGATE LIABILITY IN CONNECTION WITH OR UNDER THIS AGREEMENT EXCEED $100USD. FOR GREATER CERTAINTY, THE EXISTENCE OF ONE OR MORE CLAIMS UNDER THIS AGREEMENT WILL NOT INCREASE THIS MAXIMUM LIABILITY AMOUNT.Limitations of Liability. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT WILL LICENSEE BE LIABLE, WHETHER BASED ON WARRANTY, CONTRACT, TORT, NEGLIGENCE, STRICT LIABILITY OR ANY OTHER LEGAL THEORY, FOR ANY DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL, EXEMPLARY OR PUNITIVE DAMAGES; OR LOST PROFITS, PERSONAL INJURY, FINES, FEES, PENALTIES OR OTHER LIABILITIES, IN EACH CASE, WHETHER OR NOT LICENSEE WAS ADVISED OF THE POSSIBILITY OF SUCH DAMAGES, RESULTING FROM OR RELATED TO THIS AGREEMENT.  TO THE EXTENT THAT THE FOREGOING LIMITATION IS NOT PERMITTED BY APPLICABLE LAW, IN NO EVENT WILL LICENSEE’S TOTAL AGGREGATE LIABILITY IN CONNECTION WITH OR UNDER THIS AGREEMENT EXCEED $100USD. FOR GREATER CERTAINTY, THE EXISTENCE OF ONE OR MORE CLAIMS UNDER THIS AGREEMENT WILL NOT INCREASE THIS MAXIMUM LIABILITY AMOUNT."
-        );
-      }
-    }
   };
   // Set the slider display text based on the sliders' values
-  const displayLiability = () => {
+  const displayData = () => {
     if (dataVal >= 70) {
       return "High risk";
     }
@@ -74,17 +87,17 @@ const InteractiveCard = (props) => {
       return "Low risk";
     }
   };
-  const displayPrivacy = () => {
-    if (liabilityVal >= 70) {
-      return "High risk";
-    }
-    if (liabilityVal >= 30 && liabilityVal <= 70) {
-      return "Medium risk";
-    }
-    if (liabilityVal <= 30) {
-      return "Low risk";
-    }
-  };
+  // const displayPrivacy = () => {
+  //   if (liabilityVal >= 70) {
+  //     return "High risk";
+  //   }
+  //   if (liabilityVal >= 30 && liabilityVal <= 70) {
+  //     return "Medium risk";
+  //   }
+  //   if (liabilityVal <= 30) {
+  //     return "Low risk";
+  //   }
+  // };
   // Define each range component
   const ranges = [
     <div className="text-center" key="range1">
@@ -93,16 +106,16 @@ const InteractiveCard = (props) => {
         id="range1"
         type="range"
         max="100"
-        step="10"
+        step="5"
         className="range range-primary"
         value={dataVal}
         onChange={(event) => {
-          setdataVal(event.target.value);
-          mutateOutput();
+          setDataVal(event.target.value);
+          mutateOutput(event.target.value, dataTitle, dataString);
         }}
       ></input>
       <label htmlFor="range1" className="text-neutral-content">
-        <p className="text-primary font-bold">{displayLiability()}</p>
+        <p className="text-primary font-bold">{displayData()}</p>
       </label>
     </div>,
     <div className="text-center" key="range2">
@@ -115,9 +128,8 @@ const InteractiveCard = (props) => {
         className="range range-accent"
         value={modelVal}
         onChange={(event) => {
-          console.log(modelVal);
-          setmodelVal(event.target.value);
-          mutateOutput();
+          setModelVal(event.target.value);
+          mutateOutput(event.target.value, modelTitle, modelString);
         }}
       ></input>
       <label htmlFor="range2" className="text-neutral-content">
@@ -134,34 +146,34 @@ const InteractiveCard = (props) => {
         className="range range-secondary"
         value={indemnityVal}
         onChange={(event) => {
-          console.log(indemnityVal);
           setIndemnityVal(event.target.value);
-          mutateOutput();
+          mutateOutput(event.target.value, indemnityTitle, indemnityString);
         }}
       ></input>
       <label htmlFor="range3" className="text-neutral-content">
         <p className="text-secondary font-bold">{displayIndemnity()}</p>
       </label>
     </div>,
-    <div className="text-center" key="range4">
-      <p>{props.title[3]}</p>
-      <input
-        id="range4"
-        type="range"
-        max="100"
-        step="10"
-        className="range range-info"
-        value={liabilityVal}
-        onChange={(event) => {
-          console.log(liabilityVal);
-          setliabilityVal(event.target.value);
-          mutateOutput();
-        }}
-      ></input>
-      <label htmlFor="range4" className="text-neutral-content">
-        {displayPrivacy()}
-      </label>
-    </div>,
+    // <div className="text-center" key="range4">
+    //   <p>{props.title[3]}</p>
+    //   <input
+    //     id="range4"
+    //     type="range"
+    //     max="100"
+    //     step="10"
+    //     className="range range-info"
+    //     value={liabilityVal}
+    //     onChange={(event) => {
+    //       console.log(liabilityVal);
+    //       setliabilityVal(event.target.value);
+    //       mutateOutput();
+    //     }}
+    //   ></input>
+    //   <label htmlFor="range4" className="text-neutral-content">
+    //     {displayPrivacy()}
+    //   </label>
+    // </div>
+    ,
   ];
   return (
     <>
@@ -170,6 +182,7 @@ const InteractiveCard = (props) => {
           title="Key Contract Provisions"
           content={ranges}
           isOutput="true"
+          outputTitle={title}
           output={value}
         />
       </div>
