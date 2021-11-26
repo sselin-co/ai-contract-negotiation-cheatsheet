@@ -605,12 +605,12 @@ export default function Home() {
           <figure>
             <iframe
               width="460"
-              height="340"
-              src="https://www.youtube.com/embed/S2-tiAjO2GM"
+              height="360"
+              src="https://www.youtube.com/embed/us7NukgCm1s"
               title="YouTube video player"
-              frameBorder="0"
+              frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
+              allowfullscreen
             ></iframe>
           </figure>
           <div className="card-body">
