@@ -26,10 +26,10 @@ const InteractiveCard = (props) => {
   const indemnityTitle = "Indemnity - ";
   // Set the output card's text based on the sliders' values
   const mutateOutput = (val, title, text) => {
-    if (val > 70) {
+    if (val >= 70) {
       setTitle(title + "High Risk");
       setValue(text);
-    } else if (val < 70 && val > 30) {
+    } else if (val <= 70 && val >= 30) {
       setTitle(title + "Medium Risk");
       setValue(text);
     } else {

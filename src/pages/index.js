@@ -807,7 +807,7 @@ export default function Home() {
         </h1> */}
 
         <div
-          className="min-h-screen flex items-center justify-center card glass"
+          className="flex items-center justify-center card glass"
           id="static"
         >
           <div class="navbar text-neutral-content rounded-box min-w-full relative z-20">
