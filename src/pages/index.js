@@ -8,6 +8,8 @@ import Card from "../components/Card";
 import InteractiveCard from "../components/InteractiveCard";
 import { Tab, Menu, Transition, Dialog } from "@headlessui/react";
 import { useState } from "react";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
 
 export default function Home() {
   let [isOpen, setIsOpen] = useState(false);
@@ -335,7 +337,7 @@ export default function Home() {
   const TableTabs = () => {
     return (
       <div>
-        <Tab.Group as="div" className="bg-neutral">
+        <Tab.Group as="div" className="bg-neutral h-96">
           <Tab.List className="tabs">
             <Tab
               className={({ selected }) =>
@@ -614,16 +616,13 @@ export default function Home() {
             ></iframe>
           </figure>
           <div className="card-body">
-            <p>
-              Have you taken our course? Follow the link for more information.
-            </p>
-            <div className="card-actions">
+            <div>
               <a
                 target="_blank"
                 href="https://osler.teachable.com/p/ai-contracting-for-startup-founders"
                 className="btn btn-secondary"
               >
-                More info
+                View Course Info
               </a>
             </div>
           </div>
@@ -640,7 +639,7 @@ export default function Home() {
               {({ open }) => (
                 <>
                   <span className="rounded-md shadow-sm">
-                    <Menu.Button className="inline-flex justify-center w-full px-4 py-2 text-sm font-medium leading-5 rounded-md hover:text-gray-500 focus:outline-none ">
+                    <Menu.Button className="inline-flex justify-center w-full text-sm font-medium leading-5 rounded-md hover:text-gray-500 focus:outline-none ">
                       <div className="w-16 h-16 mask mask-squircle">
                         <img src={props.img} />
                       </div>
@@ -708,63 +707,79 @@ export default function Home() {
   };
   const SlideDeck = () => {
     return (
-      <div className="w-full carousel">
-        <div id="slide1" className="relative w-full carousel-item">
-          <img src="/slide1.png" className="w-full" />
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide5" className="btn btn-circle">
-              ❮
-            </a>
-            <a href="#slide2" className="btn btn-circle">
-              ❯
-            </a>
+      <div className="">
+        <Carousel className="h-72">
+          <div>
+            <img src="/slide1.png" />
           </div>
-        </div>
-        <div id="slide2" className="relative w-full carousel-item">
-          <img src="/slide2.png" className="w-full" />
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide1" className="btn btn-circle">
-              ❮
-            </a>
-            <a href="#slide3" className="btn btn-circle">
-              ❯
-            </a>
+          <div>
+            <img src="/slide2.png" />
           </div>
-        </div>
-        <div id="slide3" className="relative w-full carousel-item">
-          <img src="/slide3.png" className="w-full" />
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide2" className="btn btn-circle">
-              ❮
-            </a>
-            <a href="#slide4" className="btn btn-circle">
-              ❯
-            </a>
+          <div>
+            <img src="/slide3.png" />
           </div>
-        </div>
-        <div id="slide4" className="relative w-full carousel-item">
-          <img src="/slide4.png" className="w-full" />
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide3" className="btn btn-circle">
-              ❮
-            </a>
-            <a href="#slide5" className="btn btn-circle">
-              ❯
-            </a>
+          <div>
+            <img src="/slide4.png" />
           </div>
-        </div>
-        <div id="slide5" className="relative w-full carousel-item">
-          <img src="/slide5.png" className="w-full" />
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide4" className="btn btn-circle">
-              ❮
-            </a>
-            <a href="#slide1" className="btn btn-circle">
-              ❯
-            </a>
-          </div>
-        </div>
+        </Carousel>
       </div>
+      // <div className="w-full carousel">
+      //   <div id="slide1" className="relative w-full carousel-item">
+      //     <img src="/slide1.png" className="w-full" />
+      //     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      //       <a href="#slide5" className="btn btn-circle">
+      //         ❮
+      //       </a>
+      //       <a href="#slide2" className="btn btn-circle">
+      //         ❯
+      //       </a>
+      //     </div>
+      //   </div>
+      //   <div id="slide2" className="relative w-full carousel-item">
+      //     <img src="/slide2.png" className="w-full" />
+      //     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      //       <a href="#slide1" className="btn btn-circle">
+      //         ❮
+      //       </a>
+      //       <a href="#slide3" className="btn btn-circle">
+      //         ❯
+      //       </a>
+      //     </div>
+      //   </div>
+      //   <div id="slide3" className="relative w-full carousel-item">
+      //     <img src="/slide3.png" className="w-full" />
+      //     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      //       <a href="#slide2" className="btn btn-circle">
+      //         ❮
+      //       </a>
+      //       <a href="#slide4" className="btn btn-circle">
+      //         ❯
+      //       </a>
+      //     </div>
+      //   </div>
+      //   <div id="slide4" className="relative w-full carousel-item">
+      //     <img src="/slide4.png" className="w-full" />
+      //     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      //       <a href="#slide3" className="btn btn-circle">
+      //         ❮
+      //       </a>
+      //       <a href="#slide5" className="btn btn-circle">
+      //         ❯
+      //       </a>
+      //     </div>
+      //   </div>
+      //   <div id="slide5" className="relative w-full carousel-item">
+      //     <img src="/slide5.png" className="w-full" />
+      //     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      //       <a href="#slide4" className="btn btn-circle">
+      //         ❮
+      //       </a>
+      //       <a href="#slide1" className="btn btn-circle">
+      //         ❯
+      //       </a>
+      //     </div>
+      //   </div>
+      // </div>
     );
   };
   return (
@@ -819,12 +834,12 @@ export default function Home() {
             <div class="hidden px-2 mx-2 navbar-center lg:flex">
               <div class="flex items-stretch">
                 <a class="btn btn-ghost btn-sm rounded-btn">About</a>
+                <a class="btn btn-ghost btn-sm rounded-btn">Français</a>
               </div>
             </div>
           </div>
-          <div class="grid grid-cols-3 grid-rows-6 space-y-10 -mb-24">
-            <div className="row-span-3 py-4">
-              <br />
+          <div class="grid grid-cols-3 grid-rows-6 ">
+            <div className="row-span-3">
               <Card title="General Contract Principles" content={TableTabs()} />
             </div>
             <div className="row-span-3">
@@ -833,11 +848,11 @@ export default function Home() {
             <div className="row-span-2">
               <Card title="AI Slide Deck" content={<SlideDeck />} />
             </div>
-            <div className="row-span-1">
+            <div className="row-span-1 self-center">
               <div className="text-center text-lg font-bold">
                 Talk to one of our experts:
               </div>
-              <div className="flex justify-center">
+              <div className="flex justify-evenly">
                 <Faces
                   img="sip.jpg"
                   name="Sam Ip"
@@ -861,6 +876,7 @@ export default function Home() {
                 content={LinksTable()}
                 isReference="true"
               />
+              5
             </div>
             <div className="row-span-3 col-span-2">
               <InteractiveCard title={titles} text={content} />

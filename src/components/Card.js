@@ -29,7 +29,7 @@ const Card = (props) => {
     );
   }
   return (
-    <div className="card mx-4 bg-neutral text-neutral-content text-left h-full rounded-xl shadow-lg">
+    <div className="card mx-4 bg-neutral text-neutral-content text-left rounded-xl shadow-lg">
       <div className="card-body">
         <h3 className="text-xl font-bold">{props.title}</h3>
         <p className="text-l">{props.text}</p>
