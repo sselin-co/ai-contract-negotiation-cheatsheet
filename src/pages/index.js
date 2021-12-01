@@ -838,7 +838,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div class="grid grid-cols-3 grid-rows-6 ">
+          <div class="grid grid-cols-3 grid-flow-row my-5 space-y-2">
             <div className="row-span-3">
               <Card title="General Contract Principles" content={TableTabs()} />
             </div>
@@ -876,7 +876,6 @@ export default function Home() {
                 content={LinksTable()}
                 isReference="true"
               />
-              5
             </div>
             <div className="row-span-3 col-span-2">
               <InteractiveCard title={titles} text={content} />
