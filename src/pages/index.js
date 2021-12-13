@@ -59,11 +59,6 @@ export default function Home() {
             <td>{t("tab1-row4-col3")}</td>
           </tr>
           <tr className="bg-base-100 border-2 border-neutral">
-            <td>{t("tab1-row5-col1")}</td>
-            <td>{t("tab1-row5-col2")}</td>
-            <td>{t("tab1-row5-col3")}</td>
-          </tr>
-          <tr className="bg-base-100 border-2 border-neutral">
             <td>{t("tab1-row6-col1")}</td>
             <td>{t("tab1-row6-col2")}</td>
             <td>{t("tab1-row6-col3")}</td>
