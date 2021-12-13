@@ -15,7 +15,12 @@ export default function Home() {
   let [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
   const { t } = useTranslation("common");
-  const titles = ["Data", "Models", "Liability", "Indemnity"];
+  const titles = [
+    "Data Rights",
+    "Model Ownership",
+    "Limitation of Liability",
+    "Indemnity",
+  ];
   const content = [
     "Content for Slider 1",
     "Content for Slider 2",
@@ -414,7 +419,7 @@ export default function Home() {
   const Trailer = () => {
     return (
       <>
-        <div className="card shadow-sm bg-neutral text-neutral-content max-w-80">
+        <div className="card shadow-sm bg-neutral text-neutral-content max-w-80 mx-4">
           <figure>
             <iframe
               width="460"
@@ -534,63 +539,6 @@ export default function Home() {
           </div>
         </Carousel>
       </div>
-      // <div className="w-full carousel">
-      //   <div id="slide1" className="relative w-full carousel-item">
-      //     <img src="/slide1.png" className="w-full" />
-      //     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      //       <a href="#slide5" className="btn btn-circle">
-      //         ❮
-      //       </a>
-      //       <a href="#slide2" className="btn btn-circle">
-      //         ❯
-      //       </a>
-      //     </div>
-      //   </div>
-      //   <div id="slide2" className="relative w-full carousel-item">
-      //     <img src="/slide2.png" className="w-full" />
-      //     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      //       <a href="#slide1" className="btn btn-circle">
-      //         ❮
-      //       </a>
-      //       <a href="#slide3" className="btn btn-circle">
-      //         ❯
-      //       </a>
-      //     </div>
-      //   </div>
-      //   <div id="slide3" className="relative w-full carousel-item">
-      //     <img src="/slide3.png" className="w-full" />
-      //     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      //       <a href="#slide2" className="btn btn-circle">
-      //         ❮
-      //       </a>
-      //       <a href="#slide4" className="btn btn-circle">
-      //         ❯
-      //       </a>
-      //     </div>
-      //   </div>
-      //   <div id="slide4" className="relative w-full carousel-item">
-      //     <img src="/slide4.png" className="w-full" />
-      //     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      //       <a href="#slide3" className="btn btn-circle">
-      //         ❮
-      //       </a>
-      //       <a href="#slide5" className="btn btn-circle">
-      //         ❯
-      //       </a>
-      //     </div>
-      //   </div>
-      //   <div id="slide5" className="relative w-full carousel-item">
-      //     <img src="/slide5.png" className="w-full" />
-      //     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      //       <a href="#slide4" className="btn btn-circle">
-      //         ❮
-      //       </a>
-      //       <a href="#slide1" className="btn btn-circle">
-      //         ❯
-      //       </a>
-      //     </div>
-      //   </div>
-      // </div>
     );
   };
   return (
