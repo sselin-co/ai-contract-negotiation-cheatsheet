@@ -530,129 +530,136 @@ export default function Home() {
     );
   };
   return (
-    <div
-      // data-theme="osler"
-      className="min-h-screen dark"
-    >
-      <Head>
-        <title>{t("page-title")}</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      {/* className="md:container md:mx-auto" */}
-      <div className="md:container md:mx-auto">
-        {/* sticky top-0  */}
+    <>
+      <div
+        // data-theme="osler"
+        className="min-h-screen dark"
+      >
+        <Head>
+          <title>{t("page-title")}</title>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
+        {/* className="md:container md:mx-auto" */}
+        <div className="md:container md:mx-auto">
+          {/* sticky top-0  */}
 
-        <div className="hero min-h-screen">
-          <div className="text-center hero-content">
-            <div className="max-w-3xl">
-              <h1 className="mb-5 text-4xl sm:text-6xl font-bold text-neutral-content">
-                {t("hero-title")}
-              </h1>
-              <p className="text-lg sm:text-xl font-bold mb-5">
-                {t("hero-subtitle")}
-              </p>
-              <a className="btn btn-primary" href="#static">
-                {" "}
-                {t("hero-button")}
-              </a>
+          <div className="hero min-h-screen">
+            <div className="text-center hero-content">
+              <div className="max-w-3xl">
+                <h1 className="mb-5 text-4xl sm:text-6xl font-bold text-neutral-content">
+                  {t("hero-title")}
+                </h1>
+                <p className="text-lg sm:text-xl font-bold mb-5">
+                  {t("hero-subtitle")}
+                </p>
+                <a className="btn btn-primary" href="#static">
+                  {" "}
+                  {t("hero-button")}
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        {/* <h1
+          {/* <h1
           className="text-center mb-5 text-3xl sm:text-5xl font-bold text-neutral-content"
           id="static"
         >
           {t("static-header")}
         </h1> */}
-        {/* <h1 className="mt-20 flex-shrink text-center mb-5 text-3xl sm:text-5xl font-bold text-neutral-content">
+          {/* <h1 className="mt-20 flex-shrink text-center mb-5 text-3xl sm:text-5xl font-bold text-neutral-content">
           {t("interactive-header")}
         </h1> */}
 
-        <div
-          className="flex items-center justify-center card glass"
-          id="static"
-        >
-          <div class="navbar text-neutral-content rounded-box min-w-full relative z-20">
-            <div class="flex-1 px-2 mx-2">
-              <span class="text-2xl font-bold">{t("interactive-header")}</span>
+          <div
+            className="flex items-center justify-center card glass"
+            id="static"
+          >
+            <div class="navbar text-neutral-content rounded-box min-w-full relative z-20">
+              <div class="flex-1 px-2 mx-2">
+                <span class="text-2xl font-bold">
+                  {t("interactive-header")}
+                </span>
+              </div>
+              <div class="hidden px-2 mx-2 navbar-center lg:flex">
+                <div class="flex items-stretch">
+                  <a class="btn btn-ghost btn-sm rounded-btn">{t("about")}</a>
+                  <a class="btn btn-ghost btn-sm rounded-btn">
+                    Français (coming soon)
+                  </a>
+                </div>
+              </div>
             </div>
-            <div class="hidden px-2 mx-2 navbar-center lg:flex">
-              <div class="flex items-stretch">
-                <a class="btn btn-ghost btn-sm rounded-btn">{t("about")}</a>
-                <a class="btn btn-ghost btn-sm rounded-btn">
-                  Français (coming soon)
-                </a>
+            <div class="grid lg:grid-cols-3 grid-cols-1 grid-flow-row my-5 space-y-2">
+              <div className="lg:row-span-3">
+                <Card
+                  title="General Contract Principles"
+                  content={TableTabs()}
+                />
+              </div>
+              <div className="lg:row-span-3">
+                <Trailer />
+              </div>
+              <div className="lg:row-span-2">
+                <Card title="AI Slide Deck" content={<SlideDeck />} />
+              </div>
+              <div className="row-span-1 self-center">
+                <div className="text-center text-lg font-bold">
+                  {t("talk-to-us")}
+                </div>
+                <div className="flex justify-evenly">
+                  <Faces
+                    img="sip.jpg"
+                    name="Sam Ip"
+                    email="mailto:sip@osler.com"
+                  />
+                  <Faces
+                    img="sselincourt.jpg"
+                    name="Shaya Selincourt"
+                    email="mailto:sselincourt@osler.com"
+                  />
+                  <Faces
+                    img="samyot.jpg"
+                    name="Sophie Amyot"
+                    email="mailto:samyot@osler.com"
+                  />
+                </div>
+              </div>
+              <div className="lg:row-span-3">
+                <Card
+                  title="AI Quick References"
+                  content={LinksTable()}
+                  isReference="true"
+                />
+              </div>
+              <div className="lg:row-span-3 lg:col-span-2">
+                <InteractiveCard title={titles} text={content} />
               </div>
             </div>
           </div>
-          <div class="grid lg:grid-cols-3 grid-cols-1 grid-flow-row my-5 space-y-2">
-            <div className="lg:row-span-3">
-              <Card title="General Contract Principles" content={TableTabs()} />
-            </div>
-            <div className="lg:row-span-3">
-              <Trailer />
-            </div>
-            <div className="lg:row-span-2">
-              <Card title="AI Slide Deck" content={<SlideDeck />} />
-            </div>
-            <div className="row-span-1 self-center">
-              <div className="text-center text-lg font-bold">
-                {t("talk-to-us")}
+          <div className="flex justify-center mb-10 mt-5">
+            <div class="shadow stats max-w-2xl">
+              <div class="stat bg-primary">
+                <div class="stat-title">Total Page Views</div>
+                <div class="stat-value">121</div>
+                <div class="stat-desc">10% more than last month</div>
               </div>
-              <div className="flex justify-evenly">
-                <Faces
-                  img="sip.jpg"
-                  name="Sam Ip"
-                  email="mailto:sip@osler.com"
-                />
-                <Faces
-                  img="sselincourt.jpg"
-                  name="Shaya Selincourt"
-                  email="mailto:sselincourt@osler.com"
-                />
-                <Faces
-                  img="samyot.jpg"
-                  name="Sophie Amyot"
-                  email="mailto:samyot@osler.com"
-                />
+              <div class="stat bg-info">
+                <div class="stat-title">Number of New Users</div>
+                <div class="stat-value">2</div>
+                <div class="stat-desc">12% more than last month</div>
               </div>
-            </div>
-            <div className="lg:row-span-3">
-              <Card
-                title="AI Quick References"
-                content={LinksTable()}
-                isReference="true"
-              />
-            </div>
-            <div className="lg:row-span-3 lg:col-span-2">
-              <InteractiveCard title={titles} text={content} />
             </div>
           </div>
         </div>
-        <div className="flex justify-center mb-10 mt-5">
-          <div class="shadow stats max-w-2xl">
-            <div class="stat bg-primary">
-              <div class="stat-title">Total Page Views</div>
-              <div class="stat-value">121</div>
-              <div class="stat-desc">10% more than last month</div>
-            </div>
-            <div class="stat bg-info">
-              <div class="stat-title">Number of New Users</div>
-              <div class="stat-value">2</div>
-              <div class="stat-desc">12% more than last month</div>
-            </div>
+        <footer class="p-4 footer bg-neutral text-base-content footer-center">
+          <div>
+            <p>
+              Copyright © 2021 - All right reserved by Osler, Hoskin, and
+              Harcourt LLP
+            </p>
           </div>
-        </div>
+        </footer>
       </div>
-      <footer class="p-4 footer bg-neutral text-base-content footer-center">
-        <div>
-          <p>
-            Copyright © 2021 - All right reserved by Osler, Hoskin, and Harcourt
-            LLP
-          </p>
-        </div>
-      </footer>
-    </div>
+    </>
   );
 }
 
