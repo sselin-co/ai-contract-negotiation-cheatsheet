@@ -58,6 +58,11 @@ export default function Home() {
             <td>{t("tab1-row4-col2")}</td>
             <td>{t("tab1-row4-col3")}</td>
           </tr>
+          {/* <tr className="bg-base-100 border-2 border-neutral">
+            <td>{t("tab1-row5-col1")}</td>
+            <td>{t("tab1-row5-col2")}</td>
+            <td>{t("tab1-row5-col3")}</td>
+          </tr> */}
           <tr className="bg-base-100 border-2 border-neutral">
             <td>{t("tab1-row6-col1")}</td>
             <td>{t("tab1-row6-col2")}</td>
@@ -73,16 +78,16 @@ export default function Home() {
             <td>{t("tab1-row8-col2")}</td>
             <td>{t("tab1-row8-col3")}</td>
           </tr>
-          <tr className="bg-base-100 border-2 border-neutral">
+          {/* <tr className="bg-base-100 border-2 border-neutral">
             <td>{t("tab1-row9-col1")}</td>
             <td>{t("tab1-row9-col2")}</td>
             <td>{t("tab1-row9-col3")}</td>
-          </tr>
-          <tr className="bg-base-100 border-2 border-neutral">
+          </tr> */}
+          {/* <tr className="bg-base-100 border-2 border-neutral">
             <td>{t("tab1-row10-col1")}</td>
             <td>{t("tab1-row10-col2")}</td>
             <td>{t("tab1-row10-col3")}</td>
-          </tr>
+          </tr> */}
         </tbody>
       </table>
     );
