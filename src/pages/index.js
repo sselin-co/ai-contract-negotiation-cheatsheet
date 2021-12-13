@@ -119,10 +119,6 @@ export default function Home() {
             <td>{t("tab2-row4-col2")}</td>
           </tr>
           <tr className="bg-base-100 border-2 border-neutral">
-            <td>{t("tab2-row5-col1")}</td>
-            <td>{t("tab2-row5-col2")}</td>
-          </tr>
-          <tr className="bg-base-100 border-2 border-neutral">
             <td>{t("tab2-row6-col1")}</td>
             <td>{t("tab2-row6-col2")}</td>
           </tr>
@@ -133,14 +129,6 @@ export default function Home() {
           <tr className="bg-base-100 border-2 border-neutral">
             <td>{t("tab2-row8-col1")}</td>
             <td>{t("tab2-row8-col2")}</td>
-          </tr>
-          <tr className="bg-base-100 border-2 border-neutral">
-            <td>{t("tab2-row9-col1")}</td>
-            <td>{t("tab2-row9-col2")}</td>
-          </tr>
-          <tr className="bg-base-100 border-2 border-neutral">
-            <td>{t("tab2-row10-col1")}</td>
-            <td>{t("tab2-row10-col2")}</td>
           </tr>
           <tr className="bg-base-100 border-2 border-neutral">
             <td>{t("tab2-row11-col1")}</td>

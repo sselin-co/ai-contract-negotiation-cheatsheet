@@ -157,7 +157,7 @@ const InteractiveCard = (props) => {
     <>
       <div className="flex flex-wrap">
         <Card
-          title="Key Contract Provisions"
+          title="Sample Key Contract Provisions"
           content={ranges}
           isOutput="true"
           outputTitle={title}
