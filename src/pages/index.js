@@ -579,7 +579,9 @@ export default function Home() {
             <div class="hidden px-2 mx-2 navbar-center lg:flex">
               <div class="flex items-stretch">
                 <a class="btn btn-ghost btn-sm rounded-btn">{t("about")}</a>
-                <a class="btn btn-ghost btn-sm rounded-btn">Français</a>
+                <a class="btn btn-ghost btn-sm rounded-btn">
+                  Français (coming soon)
+                </a>
               </div>
             </div>
           </div>
