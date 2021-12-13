@@ -15,7 +15,7 @@ export default function Home() {
   let [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
   const { t } = useTranslation("common");
-  const titles = ["Data", "Models", "Indemnity", "Liability"];
+  const titles = ["Data", "Models", "Liability", "Indemnity"];
   const content = [
     "Content for Slider 1",
     "Content for Slider 2",
@@ -27,116 +27,61 @@ export default function Home() {
       <table className="w-full text-sm relative overflow-x-auto">
         <thead className="sticky top-0 bg-neutral">
           <tr>
-            <th scope="col">Tactics</th>
-            <th scope="col">Explanation</th>
-            <th scope="col">Example</th>
+            <th scope="col">{t("tab1-header1")}</th>
+            <th scope="col">{t("tab1-header2")}</th>
+            <th scope="col">{t("tab1-header3")}</th>
           </tr>
         </thead>
         <tbody className="text-2xs">
           <tr className="bg-base-100 border-2 border-neutral">
-            <td>THROWING JUNK</td>
-            <td>
-              Information that is delivered tactically to weaken the other
-              party’s position
-            </td>
-            <td>
-              “Well, the seats aren’t in great condition. I’m not crazy about
-              the color either.”
-            </td>
+            <td>{t("tab1-row1-col1")}</td>
+            <td>{t("tab1-row1-col2")}</td>
+            <td>{t("tab1-row1-col3")}</td>
           </tr>
           <tr className="bg-base-100 border-2 border-neutral">
-            <td>PERSUASION</td>
-            <td>
-              Cause the other party to do something through reasoning or
-              argument.
-            </td>
-            <td>
-              “We need to evaluate this decision from a total cost of ownership
-              standp­oint.”
-            </td>
+            <td>{t("tab1-row2-col1")}</td>
+            <td>{t("tab1-row2-col2")}</td>
+            <td>{t("tab1-row2-col3")}</td>
           </tr>
           <tr className="bg-base-100 border-2 border-neutral">
-            <td>COMPETITION</td>
-            <td>A tactically delivered threat of doing business elsewhere.</td>
-            <td>“You’re quite a bit higher than the competition.”</td>
+            <td>{t("tab1-row3-col1")}</td>
+            <td>{t("tab1-row3-col2")}</td>
+            <td>{t("tab1-row3-col3")}</td>
           </tr>
           <tr className="bg-base-100 border-2 border-neutral">
-            <td>THE FLINCH</td>
-            <td>
-              A tactically delivered negative reaction to the other party’s
-              position as a means to increase their satisf­action with the
-              outcome.
-            </td>
-            <td>“Whoa, I must have misheard you. $70 per unit?!”</td>
+            <td>{t("tab1-row4-col1")}</td>
+            <td>{t("tab1-row4-col2")}</td>
+            <td>{t("tab1-row4-col3")}</td>
           </tr>
           <tr className="bg-base-100 border-2 border-neutral">
-            <td>THE SQUEEZE</td>
-            <td>
-              A tactically planned statement that directly targets your
-              opponent’s insecurity about their own pricing or position.
-            </td>
-            <td>“I like you, but I need you to do better than that.”</td>
+            <td>{t("tab1-row5-col1")}</td>
+            <td>{t("tab1-row5-col2")}</td>
+            <td>{t("tab1-row5-col3")}</td>
           </tr>
           <tr className="bg-base-100 border-2 border-neutral">
-            <td>DEADLINE</td>
-            <td>
-              A time pressure that is tactically aimed to affect the choices the
-              other party makes, resulting in a more favorable position for
-              yourself.
-            </td>
-            <td>“I need your best offer by 5pm.”</td>
+            <td>{t("tab1-row6-col1")}</td>
+            <td>{t("tab1-row6-col2")}</td>
+            <td>{t("tab1-row6-col3")}</td>
           </tr>
           <tr className="bg-base-100 border-2 border-neutral">
-            <td>PERSUASION</td>
-            <td>
-              Cause the other party to do something through reasoning or
-              argument.
-            </td>
-            <td>
-              “We need to evaluate this decision from a total cost of ownership
-              standp­oint.”
-            </td>
+            <td>{t("tab1-row7-col1")}</td>
+            <td>{t("tab1-row7-col2")}</td>
+            <td>{t("tab1-row7-col3")}</td>
           </tr>
           <tr className="bg-base-100 border-2 border-neutral">
-            <td>FIRM POSITION</td>
-            <td>
-              Strate­gically deadlo­cking in order to test the other party’s
-              position.
-            </td>
-            <td>
-              “It sounds like we won’t be able to agree on terms. I appreciate
-              your time.”
-            </td>
+            <td>{t("tab1-row8-col1")}</td>
+            <td>{t("tab1-row8-col2")}</td>
+            <td>{t("tab1-row8-col3")}</td>
           </tr>
           <tr className="bg-base-100 border-2 border-neutral">
-            <td>LIMITED or NO AUTHORITY</td>
-            <td>
-              Strate­gically displaying a lack of authority in a given
-              negotiation in order to gain leverage.
-            </td>
-            <td>
-              “I’ve been instructed not to do a penny more than $67 per unit on
-              this SKU.”
-            </td>
+            <td>{t("tab1-row9-col1")}</td>
+            <td>{t("tab1-row9-col2")}</td>
+            <td>{t("tab1-row9-col3")}</td>
           </tr>
           <tr className="bg-base-100 border-2 border-neutral">
-            <td>SILENCE</td>
-            <td>
-              Strate­gically using silence as a means to increase as well as
-              protect leverage.
-            </td>
-            <td>“[Cric­kets]”</td>
-          </tr>
-          <tr className="bg-base-100 border-2 border-neutral">
-            <td>THE NIBBLE</td>
-            <td>
-              A small, seemingly insign­ificant conces­sion. Usually made at the
-              very end of a negoti­ation.
-            </td>
-            <td>
-              “Okay great, now just agree to split the marketing costs and I can
-              sign off.”
-            </td>
+            <td>{t("tab1-row10-col1")}</td>
+            <td>{t("tab1-row10-col2")}</td>
+            <td>{t("tab1-row10-col3")}</td>
           </tr>
         </tbody>
       </table>
@@ -147,191 +92,57 @@ export default function Home() {
       <table className="w-full text-sm relative bg-neutral overflow-x-auto">
         <thead className="sticky top-0 bg-neutral">
           <tr>
-            <th>Mistake</th>
-            <th>Explanation</th>
+            <th scope="col">{t("tab2-header1")}</th>
+            <th scope="col">{t("tab2-header2")}</th>
           </tr>
         </thead>
         <tbody className="text-2xs">
           <tr className="bg-base-100 border-2 border-neutral">
-            <td>NOT BUILDING RELATIONSHIPS</td>
-            <td className="max-w-2xl">
-              <div>
-                There may be times when you have to enter into negoti­ations
-                without any unders­tanding of the other side’s positions. But
-                wherever possible try to establish a relati­onship with the
-                other party in advance; doing so will greatly increase your
-                negoti­ating power. Even seemingly unimpo­rtant “small talk” can
-                help to establish trust while giving you some insight into how
-                to deal with the other person. Not knowing anything about your
-                opponent in a negoti­ating situation is a major handicap.
-              </div>
-            </td>
+            <td>{t("tab2-row1-col1")}</td>
+            <td>{t("tab2-row1-col2")}</td>
           </tr>
           <tr className="bg-base-100 border-2 border-neutral">
-            <td>TALKING TOO MUCH</td>
-            <td>
-              In negoti­ating, silence carries a great deal of power. Most
-              people are uncomf­ortable with silence and negoti­ating pros are
-              well aware of that. Train yourself to get comfor­table with the
-              awkwar­dness of silence and use it to your negoti­ating advantage.
-              After a period of silence, the first person to speak will usually
-              be at a disadv­antage. As one pro puts it, “He who talks the least
-              learns the most.”
-            </td>
+            <td>{t("tab2-row2-col1")}</td>
+            <td>{t("tab2-row2-col2")}</td>
           </tr>
           <tr className="bg-base-100 border-2 border-neutral">
-            <td>NOT LISTENING</td>
-            <td>
-              It is often easier for us to think about what we want to say next
-              rather than listen to what is being said. If that sounds familiar,
-              you have a valuable opport­unity to bolster your negoti­ating
-              success. “Listening is a skill that you must work on” says Michele
-              Tillis Lederman, author and adjunct professor at NYU’s Stern
-              School of Business. “Listening is not a passive activity. It takes
-              energy and concen­tration to focus on what people are saying and
-              what they mean by it.”
-            </td>
+            <td>{t("tab2-row3-col1")}</td>
+            <td>{t("tab2-row3-col2")}</td>
           </tr>
           <tr className="bg-base-100 border-2 border-neutral">
-            <td>CONLFATING ARGUING WITH NEGOTIATING</td>
-            <td>
-              In an argument, each person makes a strong and sometimes
-              irreve­rsible point for or against something. Under those
-              condit­ions, seldom if ever is any productive conclusion reached.
-              In contrast, the purpose of a negoti­ation session is for both
-              sides to reach an agreement. Almost without exception compro­mises
-              on the part of both sides are necessary. Negoti­ation skills on
-              your part can help to avoid that deal-k­illing conclu­sion.
-            </td>
+            <td>{t("tab2-row4-col1")}</td>
+            <td>{t("tab2-row4-col2")}</td>
           </tr>
           <tr className="bg-base-100 border-2 border-neutral">
-            <td>WAITING FOR THE OTHER PARTY TO MAKE THE FIRST OFFER</td>
-            <td>
-              Contrary to conven­tional wisdom, there is no research supporting
-              the claim that waiting for the other party to make the first move
-              is advant­ageous; in fact, making the first offer can serve as an
-              anchor influe­ncing the other party’s counte­roffer. If you do
-              decide to make the first move, avoid making an unreal­istic offer
-              — such a move can backfire by discou­raging the other party from
-              continuing in the negoti­ation. But remember that first offers are
-              hardly ever accepted so make sure that your offer allows room for
-              maneuv­ering
-            </td>
+            <td>{t("tab2-row5-col1")}</td>
+            <td>{t("tab2-row5-col2")}</td>
           </tr>
           <tr className="bg-base-100 border-2 border-neutral">
-            <td>NOT KNOWING YOUR BATNA</td>
-            <td>
-              Skillful negoti­ation calls for careful advance consid­eration of
-              possible outcomes — that’s why it is best to know in advance what
-              the least is that you will agree to. BATNA stands for “Best
-              Altern­ative to a Negotiated Agreem­ent.” The term originated in
-              the book “Getting to Yes: Negoti­ating Agreement Without Giving
-              In” by Roger Fisher and William Ury. Even though your aim in
-              negoti­ation is to come away with what you want, it’s important to
-              decide in advance what your next-best altern­ative is (your
-              BATNA).
-            </td>
+            <td>{t("tab2-row6-col1")}</td>
+            <td>{t("tab2-row6-col2")}</td>
           </tr>
           <tr className="bg-base-100 border-2 border-neutral">
-            <td>FAILING TO CONTROL YOUR EMOTIONS</td>
-            <td>
-              Keep your emotions in check and you are less likely to enter into
-              a bad deal. By mainta­ining the option to call it a day you’ll be
-              in a stronger bargaining position if the other party decides to
-              try again. In that case, the pressure will be on them to improve
-              the offer.
-            </td>
+            <td>{t("tab2-row7-col1")}</td>
+            <td>{t("tab2-row7-col2")}</td>
           </tr>
           <tr className="bg-base-100 border-2 border-neutral">
-            <td>FORGETTING THAT EVERYTHING IS NEGOTIABLE</td>
-            <td>
-              Don’t allow yourself to be sidetr­acked by statements declaring
-              that something is non-ne­got­iable. Once you decide that the terms
-              for anything are subject to change, you give yourself a strong
-              negoti­ating advantage by offering a sensible, viable and mutually
-              beneficial altern­ative.
-            </td>
+            <td>{t("tab2-row8-col1")}</td>
+            <td>{t("tab2-row8-col2")}</td>
           </tr>
           <tr className="bg-base-100 border-2 border-neutral">
-            <td>FAILING TO PREPARE</td>
-            <td>
-              Even though you have a clear idea of what you want to accomplish
-              in a negoti­ation, you still have to think about and prepare your
-              arguments carefully. You also want to learn as much as possible
-              about the other party — whether it is an employee, your landlord,
-              a supplier or a potential big client. No matter how major or
-              minor, the more knowledge you can demons­trate about the subject
-              of the negoti­ation, the more respect you will get from the other
-              party and the more confident you will feel. Also, good
-              prepar­ation makes it less likely that you will forget something,
-              as it is extremely difficult to introduce new demands after
-              negoti­ations have begun.
-            </td>
+            <td>{t("tab2-row9-col1")}</td>
+            <td>{t("tab2-row9-col2")}</td>
           </tr>
           <tr className="bg-base-100 border-2 border-neutral">
-            <td>FAILING TO ASK</td>
-            <td>
-              Key to successful negoti­ations is asking for what you want. The
-              fear of rejection or of appearing greedy can put a major dent in
-              your negoti­ation success. Rejections are going to happen;
-              however, it is important to remember that they are not personal.
-              When you get a “no” remember to keep asking. Always have several
-              altern­atives to offer, and remember why you have your BATNA.
-            </td>
+            <td>{t("tab2-row10-col1")}</td>
+            <td>{t("tab2-row10-col2")}</td>
           </tr>
           <tr className="bg-base-100 border-2 border-neutral">
-            <td>ISSUING AN ULTIMATUM</td>
-            <td>
-              The one deadly mistake inexpe­rienced negoti­ators make, is
-              beginning the negoti­ations with “this is our best and last
-              offer.” Once that’s said, there’s no room for negoti­ation. The
-              other party has been put in a defensive position. While it may
-              become necessary to become aggres­sive, it is always best to keep
-              in mind that the ultimate goal of a negoti­ating session is to
-              reach a mutually acceptable conclu­sion. Should a deadlock be
-              reached, one solution could be setting a deadline for the
-              conclusion of the negoti­ations. This gives both parties time to
-              reexamine their positions and reopen talks with a renewed effort
-              to reach an agreement.
-            </td>
+            <td>{t("tab2-row11-col1")}</td>
+            <td>{t("tab2-row11-col2")}</td>
           </tr>
         </tbody>
       </table>
-      // <table className="text-black text-xs bg-gray-300 border-collapse table">
-      //   <thead>
-      //     <tr>
-      //       <th scope="col">Mistake</th>
-      //       <th scope="col">Explanation</th>
-      //     </tr>
-      //   </thead>
-      //   <tbody>
-      //     <tr>
-      //       <td>1. Not building relati­onships</td>
-      //       <td>
-      //         There may be times when you have to enter into negoti­ations
-      //         without any unders­tanding of the other side’s positions. But
-      //         wherever possible try to establish a relati­onship with the other
-      //         party in advance; doing so will greatly increase your negoti­ating
-      //         power. Even seemingly unimpo­rtant “small talk” can help to
-      //         establish trust while giving you some insight into how to deal
-      //         with the other person. Not knowing anything about your opponent in
-      //         a negoti­ating situation is a major handicap.
-      //       </td>
-      //     </tr>
-      //     <tr>
-      //       <td>2. Talking too much</td>
-      //       <td>
-      //         In negoti­ating, silence carries a great deal of power. Most
-      //         people are uncomf­ortable with silence and negoti­ating pros are
-      //         well aware of that. Train yourself to get comfor­table with the
-      //         awkwar­dness of silence and use it to your negoti­ating advantage.
-      //         After a period of silence, the first person to speak will usually
-      //         be at a disadv­antage. As one pro puts it, “He who talks the least
-      //         learns the most.”
-      //       </td>
-      //     </tr>
-      //   </tbody>
-      // </table>
     );
   };
   const TableTabs = () => {
@@ -827,30 +638,28 @@ export default function Home() {
         >
           <div class="navbar text-neutral-content rounded-box min-w-full relative z-20">
             <div class="flex-1 px-2 mx-2">
-              <span class="text-2xl font-bold">
-                Interactive AI Negotiation Cheat Sheet
-              </span>
+              <span class="text-2xl font-bold">{t("interactive-header")}</span>
             </div>
             <div class="hidden px-2 mx-2 navbar-center lg:flex">
               <div class="flex items-stretch">
-                <a class="btn btn-ghost btn-sm rounded-btn">About</a>
+                <a class="btn btn-ghost btn-sm rounded-btn">{t("about")}</a>
                 <a class="btn btn-ghost btn-sm rounded-btn">Français</a>
               </div>
             </div>
           </div>
-          <div class="grid grid-cols-3 grid-flow-row my-5 space-y-2">
-            <div className="row-span-3">
+          <div class="grid lg:grid-cols-3 grid-cols-1 grid-flow-row my-5 space-y-2">
+            <div className="lg:row-span-3">
               <Card title="General Contract Principles" content={TableTabs()} />
             </div>
-            <div className="row-span-3">
+            <div className="lg:row-span-3">
               <Trailer />
             </div>
-            <div className="row-span-2">
+            <div className="lg:row-span-2">
               <Card title="AI Slide Deck" content={<SlideDeck />} />
             </div>
             <div className="row-span-1 self-center">
               <div className="text-center text-lg font-bold">
-                Talk to one of our experts:
+                {t("talk-to-us")}
               </div>
               <div className="flex justify-evenly">
                 <Faces
@@ -870,14 +679,14 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className="row-span-3">
+            <div className="lg:row-span-3">
               <Card
-                title="Quick References"
+                title="AI Quick References"
                 content={LinksTable()}
                 isReference="true"
               />
             </div>
-            <div className="row-span-3 col-span-2">
+            <div className="lg:row-span-3 lg:col-span-2">
               <InteractiveCard title={titles} text={content} />
             </div>
           </div>
@@ -912,7 +721,10 @@ export default function Home() {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common"])),
+      ...(await serverSideTranslations(locale, [
+        "common",
+        "contract-provisions",
+      ])),
       // Will be passed to the page component as props
     },
   };
